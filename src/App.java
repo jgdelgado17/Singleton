@@ -6,10 +6,12 @@ public class App {
         SingletonThreadSafeCheckedLocking singleton1 = SingletonThreadSafeCheckedLocking.getInstance();
         SingletonThreadSafeCheckedLocking singleton2 = SingletonThreadSafeCheckedLocking.getInstance();
 
+        //Imprimimos la dirección de memoria para ver si son iguales
         System.out.println(singleton1);
         System.out.println(singleton2);
 
-        if (singleton1 == singleton2)
+        //Comprobamos si son iguales
+        if (singleton1.equals(singleton2))
             System.out.println("Son el mismo objeto");
         else
             System.out.println("No son el mismo objeto");
